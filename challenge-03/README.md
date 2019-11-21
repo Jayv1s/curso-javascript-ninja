@@ -184,17 +184,10 @@ pessoa.apresentacao = function() {
     var  txtSexo, txtIdade, txtCaminhada;
 
     //se é feminino ou masculino
-    if(pessoa.sexo == 'M') {
-        txtSexo = `Olá, eu sou o ${pessoa.nomeCompleto()}`;
-    }else {
-        txtSexo = `Olá, eu sou a ${pessoa.nomeCompleto()}`;
-    };
+    pessoa.sexo == 'M' ? `Olá, eu sou o ${pessoa.nomeCompleto()}` : `Olá, eu sou a ${pessoa.nomeCompleto()}`;
+
     //se é anos ou ano
-    if(pessoa.idade == 1) {
-        txtIdade = `tenho ${pessoa.idade} ano`;
-    }else {
-        txtIdade = `tenho ${pessoa.idade} anos`;
-    };
+    pessoa.idade == 1 ? `tenho ${pessoa.idade} ano` : `tenho ${pessoa.idade} anos`;
 
     return txtSexo + ', ' + txtIdade+ `, ${pessoa.altura}, meu peso é ${pessoa.peso} e, só hoje, eu já caminhei` + txtCaminhada;
 };
